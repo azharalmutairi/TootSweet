@@ -1,0 +1,319 @@
+<html>
+<head>
+
+<title> Home page </title>
+
+<style type="text/css">
+   body   {font-family:arial,helvetical;}
+   p      {font-size:medium;}
+
+  #section1{
+   
+	background-image: url("bg3.jpg");
+	background-size: 1000px 700px;
+	width: 900px;
+	padding: 33px;
+	border: 1px solid white;
+	font-size:190%;
+ 	border-radius: 13px;
+  	position: relative;
+  	right: -23px;	 
+  }
+
+  #box{
+    	line-height:35px;
+    	background-color:#69321e;
+    	font-family:verdana;
+    	height:250px;
+    	width: 810px;
+  	padding: 40px;
+  	border: 1px solid #96886B;
+	border-radius: 8px;
+  }
+
+  
+  #footer{
+ 	background-color:#69321e;
+	color:#ffffff;
+	text-align:center;
+	padding:5px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #9c3a6b;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+ #footer1{
+	color:#69321e;
+	text-align:right;
+	padding:5px;
+} 
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+} 
+
+</style>
+
+<a name="top"></a>
+
+</head>
+
+
+
+<body onload="onloadweb()" background="http://wallpapercave.com/wp/Y6lyC3E.jpg">
+        <div id="footer1">
+
+            <b>
+                TO SIGN IN:
+            </b>
+               <br>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        </div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="login.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<center><a href="TS.html" target="_blank" ><img src="logo.gif" align="middle"></a></center>
+<h1><font color="#69321e"><center> Toot Sweet Website </center></h1>
+
+<center>
+	<a href="search.html"><img src="seach.jpg"></a>
+	<a href="healthy.html"><img src="healthy.jpg"></a>
+	<img src="1.jpg">	
+</center>
+
+<br>
+<HR COLOR=fffff> 
+<br>
+<br>
+<br>
+
+<center>
+<div id="section1">
+
+   <h2 Align="center"><font style="color:#eb5f89;">Welcome</font></h2>
+   <br>
+   <br>
+
+   <div id="box">
+
+	<h2 ALIGN=left><font color=#ffffff size=6>Description</font></h2>
+	<p ALIGN=left><font color=#ffffff> Whether you need a sweet, savory, or healthy recipe, we have top-rated dessert recipes to satisfy your taste. Satisfy your sweet tooth with dessert recipes from Toot Sweet website, that included the recipe of different dishes with pics.
+	</font></p>
+
+   </div>
+
+</div>
+
+</center>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+<center>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">Date</button>
+
+
+<script>
+	function displayDate() {
+  	    document.getElementById("time").innerHTML =Date();
+		}
+	
+</script>
+
+<p id="time"></p>
+</center>
+
+<br>
+<br>
+
+
+<center><a href="#top"><img src="top.png"></a></center>
+<p align="center"><font color="white">TOP</p>
+
+<br>
+<div id="footer">
+Copyright � tootsweet.com
+</div>
+<br>
+
+<table border=0 style="width:100%">
+  <tr>
+    <td align = center>Follow us</td>
+ 
+    <td align = center>Support line</td>
+  </tr>
+
+  <tr>
+     <td><center><a href="https://twitter.com/Maram1414" target="blank"><img src="twitter-logo.png" width="30" height="30"></a>
+         <img src="Facebook_logo.png" width="30" height="30"> 
+         <img src="youtube_icon.png" width="30" height="30"></center>
+     </td>
+
+     <td>
+	<center>+966566276807</center>
+     </td>
+  </tr>
+ 
+</table>
+ 
+
+</body>
+</html>
+
